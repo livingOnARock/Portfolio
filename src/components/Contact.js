@@ -78,6 +78,7 @@ const Contact = () => {
               }}
               href={"https://github.com/livingOnARock/"}
               target="_blank"
+              rel="noopener noreferrer"
             >
               Go to Github
             </a>

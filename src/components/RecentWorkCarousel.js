@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 
 import DigitalContactsImg from "../srcImgs/DigitalContactsScreenShot.PNG";
 import PoweredByYelpImg from "../srcImgs/PoweredByYelp.PNG";
-
+import FlavorImg from "../srcImgs/FlavorImg.JPG";
 const RecentWorkCarousel = () => {
   return (
     <div
@@ -32,7 +32,7 @@ const RecentWorkCarousel = () => {
             Veiw Project
           </Button>
           <Button
-            href="https://github.com/livingOnARock/DigitalAddressBook"
+            href="https://github.com/livingOnARock/address-book"
             target="_blank"
             variant="primary"
             className="m-2"
@@ -48,7 +48,7 @@ const RecentWorkCarousel = () => {
           <p>Front End App to keep Personal and Professional Contacts</p>
 
           <Button
-            href="https://powered-by-yelp.herokuapp.com/"
+            href="https://secret-scrubland-93661.herokuapp.com/"
             target="_blank"
             variant="primary"
             className="m-2"
@@ -65,14 +65,14 @@ const RecentWorkCarousel = () => {
           </Button>
         </Carousel.Item>
         <Carousel.Item className="mb-5 text-white">
-          <img src={DigitalContactsImg} alt="First slide" className="mb-3" />
+          <img src={FlavorImg} alt="First slide" className="mb-3" />
 
           <h3>DigitalAddressBook</h3>
 
           <p>MERN App to keep Personal and Professional Contacts</p>
 
           <Button
-            href="https://digital-address-book.herokuapp.com/"
+            href="https://flavor-restaurant.herokuapp.com"
             target="_blank"
             variant="primary"
             className="m-2"
@@ -80,7 +80,7 @@ const RecentWorkCarousel = () => {
             Veiw Project
           </Button>
           <Button
-            href="https://github.com/livingOnARock/DigitalAddressBook"
+            href="https://github.com/livingOnARock/Flavor"
             target="_blank"
             variant="primary"
             className="m-2"

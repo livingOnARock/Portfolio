@@ -1,5 +1,7 @@
 import React from "react";
 import techFooterDiv from "../srcImgs/techFooterImg.jpg";
+import "../App.css";
+
 const Technologies = () => {
   return (
     <div className="Technologies">
