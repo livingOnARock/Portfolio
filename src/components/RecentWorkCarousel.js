@@ -49,7 +49,7 @@ const RecentWorkCarousel = () => {
           <p>Front End App to keep Personal and Professional Contacts</p>
 
           <Button
-            href="https://secret-scrubland-93661.herokuapp.com/"
+            href="https://search-yelp.herokuapp.com/"
             target="_blank"
             variant="primary"
             className="m-2"
