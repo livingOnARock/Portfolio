@@ -9,7 +9,7 @@ const Technologies = () => {
       <span className="sectionHeading2">TECHNOLOGIES</span>
 
       <br />
-      <span className="sectionSubHeading">
+      <span className="sectionSubHeading" style={{ marginLeft: "4rem" }}>
         Familiar Technologies I Use When Developing Projects
       </span>
       <div className="tech">

@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 import DigitalContactsImg from "../srcImgs/DigitalContactsScreenShot.PNG";
 import PoweredByYelpImg from "../srcImgs/PoweredByYelp.PNG";
 import FlavorImg from "../srcImgs/FlavorImg.JPG";
+import ReactQuiz from "../srcImgs/react-quiz.JPG";
 const RecentWorkCarousel = () => {
   return (
     <div
@@ -81,6 +82,30 @@ const RecentWorkCarousel = () => {
           </Button>
           <Button
             href="https://github.com/livingOnARock/Flavor"
+            target="_blank"
+            variant="primary"
+            className="m-2"
+          >
+            View Code
+          </Button>
+        </Carousel.Item>
+        <Carousel.Item className="mb-5 text-white">
+          <img src={ReactQuiz} alt="First slide" className="mb-3" />
+
+          <h3>React Quiz</h3>
+
+          <p>React app that lets you take the quiz of your choice</p>
+
+          <Button
+            href="https://fast-dusk-40061.herokuapp.com/"
+            target="_blank"
+            variant="primary"
+            className="m-2"
+          >
+            Veiw Project
+          </Button>
+          <Button
+            href="https://github.com/livingOnARock/react-quiz"
             target="_blank"
             variant="primary"
             className="m-2"
