@@ -46,7 +46,7 @@ const RecentWorkCarousel = () => {
 
           <h3>Powered by Yelp</h3>
 
-          <p>Front End App to keep Personal and Professional Contacts</p>
+          <p>Front End App to Search businesses through Yelp API</p>
 
           <Button
             href="https://search-yelp.herokuapp.com/"
@@ -68,9 +68,9 @@ const RecentWorkCarousel = () => {
         <Carousel.Item className="mb-5 text-white">
           <img src={FlavorImg} alt="First slide" className="mb-3" />
 
-          <h3>DigitalAddressBook</h3>
+          <h3>Flavor restaurant website</h3>
 
-          <p>MERN App to keep Personal and Professional Contacts</p>
+          <p>Restaurant website made with react</p>
 
           <Button
             href="https://flavor-restaurant.herokuapp.com"
