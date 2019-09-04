@@ -1,15 +1,9 @@
-<<<<<<< HEAD
-
-# Tool Titan
+## Jason Hastey's Portfolio
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-An E-COMMERCE site to sell power tools. This project is built with React and Node.js. It also uses firebase and Express.js to store user Authentication.
+This is my portfolio. A simple website made with react, this shows contact information and recent projects.
 
-[Tool Titan e-comm](https://friendly-mestorf-ef93df.netlify.com)
+### `Visit us`
 
-#### This project can be viewed on netlify's server at:
-
-###### SCREENSHOT
-
-# ![](src/srcImgs/ToolTitanScreenshot.JPG)
+This website can be seen at here at [WWW.JASONHASTEY.COM](https://www.JasonHastey.com).
