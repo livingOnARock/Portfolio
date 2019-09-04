@@ -4,12 +4,6 @@ import Button from "react-bootstrap/Button";
 
 import DigitalContactsImg from "../srcImgs/DigitalContactsScreenShot.PNG";
 import PoweredByYelpImg from "../srcImgs/PoweredByYelp.PNG";
-import React from "react";
-import Carousel from "react-bootstrap/Carousel";
-import Button from "react-bootstrap/Button";
-
-import DigitalContactsImg from "../srcImgs/DigitalContactsScreenShot.PNG";
-import PoweredByYelpImg from "../srcImgs/PoweredByYelp.PNG";
 import FlavorImg from "../srcImgs/FlavorImg.JPG";
 import ReactQuiz from "../srcImgs/react-quiz.JPG";
 import MovieSearchScreenshot from "../srcImgs/movie-search-screenshot.png";
@@ -183,4 +177,3 @@ const RecentWorkCarousel = () => {
 };
 
 export default RecentWorkCarousel;
-
