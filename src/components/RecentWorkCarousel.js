@@ -48,6 +48,34 @@ const RecentWorkCarousel = () => {
           </Button>
         </Carousel.Item>
         <Carousel.Item className="mb-5 text-white">
+          <img
+            src={MovieSearchScreenshot}
+            alt="Movie search slide"
+            className="mb-3"
+          />
+
+          <h3>Media Search</h3>
+
+          <p>React app used to search media through the MovieDB API;</p>
+
+          <Button
+            href="https://reverent-jang-1f8c60.netlify.com/"
+            target="_blank"
+            variant="primary"
+            className="m-2"
+          >
+            Veiw Project
+          </Button>
+          <Button
+            href="https://github.com/livingOnARock/Lightning-Movie-Search"
+            target="_blank"
+            variant="primary"
+            className="m-2"
+          >
+            View Code
+          </Button>
+        </Carousel.Item>
+        <Carousel.Item className="mb-5 text-white">
           <img src={DigitalContactsImg} alt="secondSlide" className="mb-3" />
 
           <h3>DigitalAddressBook</h3>
