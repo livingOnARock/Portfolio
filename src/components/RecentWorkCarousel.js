@@ -4,6 +4,12 @@ import Button from "react-bootstrap/Button";
 
 import DigitalContactsImg from "../srcImgs/DigitalContactsScreenShot.PNG";
 import PoweredByYelpImg from "../srcImgs/PoweredByYelp.PNG";
+import React from "react";
+import Carousel from "react-bootstrap/Carousel";
+import Button from "react-bootstrap/Button";
+
+import DigitalContactsImg from "../srcImgs/DigitalContactsScreenShot.PNG";
+import PoweredByYelpImg from "../srcImgs/PoweredByYelp.PNG";
 import FlavorImg from "../srcImgs/FlavorImg.JPG";
 import ReactQuiz from "../srcImgs/react-quiz.JPG";
 import MovieSearchScreenshot from "../srcImgs/movie-search-screenshot.png";
@@ -40,6 +46,34 @@ const RecentWorkCarousel = () => {
           </Button>
           <Button
             href="https://github.com/livingOnARock/ToolTitan"
+            target="_blank"
+            variant="primary"
+            className="m-2"
+          >
+            View Code
+          </Button>
+        </Carousel.Item>
+        <Carousel.Item className="mb-5 text-white">
+          <img
+            src={MovieSearchScreenshot}
+            alt="Movie search slide"
+            className="mb-3"
+          />
+
+          <h3>Media Search</h3>
+
+          <p>React app used to search media through the MovieDB API;</p>
+
+          <Button
+            href="https://reverent-jang-1f8c60.netlify.com/"
+            target="_blank"
+            variant="primary"
+            className="m-2"
+          >
+            Veiw Project
+          </Button>
+          <Button
+            href="https://github.com/livingOnARock/Lightning-Movie-Search"
             target="_blank"
             variant="primary"
             className="m-2"
@@ -149,3 +183,4 @@ const RecentWorkCarousel = () => {
 };
 
 export default RecentWorkCarousel;
+
