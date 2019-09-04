@@ -6,6 +6,9 @@ import DigitalContactsImg from "../srcImgs/DigitalContactsScreenShot.PNG";
 import PoweredByYelpImg from "../srcImgs/PoweredByYelp.PNG";
 import FlavorImg from "../srcImgs/FlavorImg.JPG";
 import ReactQuiz from "../srcImgs/react-quiz.JPG";
+import MovieSearchScreenshot from "../srcImgs/movie-search-screenshot.png";
+import ToolTitanScreenshot from "../srcImgs/ToolTitanScreenshot.JPG";
+
 const RecentWorkCarousel = () => {
   return (
     <div
@@ -18,7 +21,34 @@ const RecentWorkCarousel = () => {
       <h1 className="mx-auto   mb-4 text-white">Recent Work</h1>
       <Carousel>
         <Carousel.Item className="mb-5 text-white">
-          <img src={DigitalContactsImg} alt="First slide" className="mb-3" />
+          <img src={ToolTitanScreenshot} alt="First slide" className="mb-3" />
+
+          <h3>Tool Titan</h3>
+
+          <p>
+            E-commerce site built with React and firebase. It also uses Node.js
+            and Express.js to handle user Authentication
+          </p>
+
+          <Button
+            href="https://friendly-mestorf-ef93df.netlify.com"
+            target="_blank"
+            variant="primary"
+            className="m-2"
+          >
+            Veiw Project
+          </Button>
+          <Button
+            href="https://github.com/livingOnARock/ToolTitan"
+            target="_blank"
+            variant="primary"
+            className="m-2"
+          >
+            View Code
+          </Button>
+        </Carousel.Item>
+        <Carousel.Item className="mb-5 text-white">
+          <img src={DigitalContactsImg} alt="secondSlide" className="mb-3" />
 
           <h3>DigitalAddressBook</h3>
 
@@ -46,10 +76,10 @@ const RecentWorkCarousel = () => {
 
           <h3>Powered by Yelp</h3>
 
-          <p>Front End App to keep Personal and Professional Contacts</p>
+          <p>Front End App to Search businesses through Yelp API</p>
 
           <Button
-            href="https://secret-scrubland-93661.herokuapp.com/"
+            href="https://search-yelp.herokuapp.com/"
             target="_blank"
             variant="primary"
             className="m-2"
@@ -68,9 +98,9 @@ const RecentWorkCarousel = () => {
         <Carousel.Item className="mb-5 text-white">
           <img src={FlavorImg} alt="First slide" className="mb-3" />
 
-          <h3>DigitalAddressBook</h3>
+          <h3>Flavor restaurant website</h3>
 
-          <p>MERN App to keep Personal and Professional Contacts</p>
+          <p>Restaurant website made with react</p>
 
           <Button
             href="https://flavor-restaurant.herokuapp.com"
