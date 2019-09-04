@@ -62,7 +62,7 @@ const RecentWorkCarousel = () => {
 
           <h3>Media Search</h3>
 
-          <p>React app used to search media through the MovieDB API;</p>
+          <p>React app used to search media through the MovieDB API</p>
 
           <Button
             href="https://reverent-jang-1f8c60.netlify.com/"
