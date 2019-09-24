@@ -1,0 +1,121 @@
+@import "../../sass/variables.scss";
+
+.Skills {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  padding: 20rem 0;
+  color: $color3;
+  background-image: linear-gradient(to left, $color0, $color0 75%);
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+
+  &__skills {
+    max-width: 120rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    gap: 2rem;
+    justify-items: center;
+    grid-column-start: 2;
+    justify-content: center;
+    padding: 4rem 0;
+  }
+
+  &__heading {
+    font-size: 6rem;
+  }
+
+  &__skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    padding: 4rem 0;
+    color: $color3;
+    background-color: $color1;
+    border: solid $color7 2px;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    position: relative;
+    cursor: pointer;
+
+    & > span {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    &:focus {
+      border: none;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    &__primary {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__secondary {
+      position: absolute;
+      top: 100%;
+      background: $color7;
+      color: $color0;
+      overflow: hidden;
+      border: solid $color7 1px;
+      padding: 1.5rem 3rem;
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      transform: scaleY(0);
+      transition: all 0.3s;
+      transform-origin: top;
+    }
+    &:focus > span {
+      display: none;
+    }
+
+    &:focus &__secondary {
+      transform: scaleY(1);
+      z-index: 3;
+      display: block;
+    }
+
+    &--icon {
+      font-size: 4.5rem;
+    }
+    &__heading {
+      font-size: 2.5rem;
+      display: block;
+    }
+
+    @media only screen and (max-width: 46.75em) {
+      flex-direction: row;
+      justify-content: space-evenly;
+      position: relative;
+
+      &--icon {
+        position: absolute;
+        font-size: 6.5rem;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &__heading {
+        position: absolute;
+        left: 45%;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 50%;
+      }
+    }
+    @media only screen and (min-width: 47.875em) and (max-width: 70.125em) {
+      &:last-child {
+        display: none;
+      }
+      &__heading--primary {
+        flex-direction: row;
+      }
+    }
+  }
+}

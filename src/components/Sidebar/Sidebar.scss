@@ -1,0 +1,165 @@
+@import "../../sass/variables.scss";
+
+.Sidebar {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: $color0;
+  cursor: pointer;
+
+  &__img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-color: white;
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+
+    align-self: center;
+    margin: 2rem auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  &__logo {
+    width: 90%;
+  }
+
+  &__name {
+    color: $color7;
+    text-transform: uppercase;
+    font-size: large;
+    padding: 1.5rem 3rem;
+    margin: 3rem 0;
+  }
+
+  &__nav {
+    width: 100%;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 3rem auto;
+
+    &-item {
+      position: relative;
+      transition: background-color 2s ease-out;
+      font-size: large;
+
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+
+      & > .active {
+        background-color: $color-secondary;
+      }
+    }
+
+    &-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 3px;
+      background-color: $color-secondary;
+      transform: scaleY(0);
+      transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+        background-color 0.1s;
+    }
+
+    &-item:hover::before,
+    &-item--active::before {
+      transform: scaleY(1);
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+
+    &-item:active::before {
+      background-color: $color-secondary;
+    }
+  }
+
+  &__link,
+  &__link:link,
+  &__link:visited {
+    color: $color7;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 1.5rem;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: stretch;
+  }
+
+  &__social-media {
+    display: flex;
+    width: 100%;
+    font-size: 3.5rem;
+    color: $color7;
+    justify-content: center;
+
+    & > a:link,
+    a:visited {
+      margin: 1rem;
+      color: $color7;
+    }
+  }
+
+  @media only screen and (max-width: 40.25em) {
+    height: min-content;
+    flex-direction: row;
+    height: auto;
+
+    &__logo-name {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      margin: 0;
+      padding: 0;
+
+      &-item {
+        position: relative;
+        transition: background-color 2s ease-out;
+        font-size: 3.2vw;
+        text-align: center;
+
+        &:not(:last-child) {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited {
+      color: $color7;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: block;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__social-media {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+@import "../../sass/variables.scss";
+
+.RecentWork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 4rem 0;
+  padding: 4rem;
+  color: $color1;
+
+  &__header {
+    display: block;
+    font-size: 6rem;
+    margin-bottom: 4.5rem;
+  }
+
+  &__projects {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 0.8fr));
+    grid-auto-rows: min-content;
+    grid-gap: 2.5rem;
+    perspective: 500px;
+    -moz-perspective: 500px;
+    justify-content: center;
+  }
+
+  &__project {
+    height: 100%;
+    align-self: stretch;
+    justify-self: stretch;
+    position: relative;
+    border-radius: 1rem;
+    align-self: center;
+
+    &--image {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      object-fit: cover;
+    }
+
+    &--front {
+      display: flex;
+      align-items: center;
+      border-radius: inherit;
+      top: 0;
+      left: 0;
+      transform: rotateY(0deg);
+      transition: all 0.8s ease, opacity 0.4s;
+    }
+
+    &--back {
+      border-radius: inherit;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: $color1;
+      color: $color7;
+      opacity: 0;
+      transform: rotateY(-180deg);
+      transition: all 0.8s ease, opacity 0.4s;
+    }
+
+    &:hover &--front {
+      transform: rotateY(180deg);
+    }
+
+    &:hover &--back {
+      transform: rotateY(0deg);
+      opacity: 1;
+    }
+
+    &--heading-primary {
+      display: block;
+    }
+    &--heading-primary {
+      font-size: 3.5rem;
+    }
+    &--heading-secondary {
+      font-size: 2rem;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  @media only screen and (max-width: 40.25em), only screen and (hover: none) {
+    &__project {
+      height: 100%;
+      align-self: stretch;
+      justify-self: stretch;
+      position: relative;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+
+      &--front {
+        align-self: center;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border: solid $color1 0.4rem;
+
+        &:hover {
+          transform: rotateY(0deg);
+        }
+      }
+
+      &--back {
+        position: relative;
+        opacity: 1;
+        transform: rotateY(0);
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        padding: 2rem;
+        height: auto;
+      }
+    }
+
+    &__btns {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    &__btn {
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+  }
+}

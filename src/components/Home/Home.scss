@@ -1,0 +1,39 @@
+@import "../../sass/variables.scss";
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../../assets/images/portfolio-header-1.jpg);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  background-size: cover;
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    backface-visibility: hidden;
+    margin-bottom: 10rem;
+
+    &--primary {
+      display: block;
+      font-size: 4rem;
+      letter-spacing: 1rem;
+      animation-name: moveInLeft;
+      animation-duration: 1.5s;
+      animation-timing-function: ease-in-out;
+    }
+
+    &--secondary {
+      display: block;
+      font-size: 2rem;
+      letter-spacing: 0.5rem;
+      animation: moveInRight 1.5s;
+    }
+  }
+}

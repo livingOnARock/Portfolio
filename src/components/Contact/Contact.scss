@@ -1,0 +1,139 @@
+@import "../../sass/variables.scss";
+
+//$color2: #5643fa;
+
+.Contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25rem 0 20rem 0;
+  background-image: linear-gradient(to left, $color0, $color0 75%);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  color: $color7;
+  width: 100%;
+  text-align: center;
+
+  &__header--primary {
+    font-size: 5rem;
+  }
+
+  &__contact {
+    display: flex;
+    padding: 2.5rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    border: solid $color4 1rem;
+    background-color: $color4;
+
+    &--header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background-color: $color0;
+      color: $color0;
+      border-radius: 1rem;
+
+      &--logo {
+        border-radius: 50%;
+        font-size: 5.5rem;
+        padding: 2rem;
+        z-index: 5;
+        color: white;
+        background-color: $color4;
+        border: solid white 0.8rem;
+      }
+
+      &-text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-primary {
+        font-size: 3.6rem;
+        width: 30rem;
+
+        background-color: white;
+        margin-left: -2rem;
+        margin-top: 2.5rem;
+        border-radius: 1rem;
+      }
+
+      &-secondary {
+        font-size: 2rem;
+        margin: 0.7rem 2.5rem 0 auto;
+        color: white;
+      }
+    }
+  }
+
+  &__methods {
+    color: white;
+
+    &--container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: $color0;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 1rem;
+    }
+  }
+
+  &__method {
+    display: flex;
+    align-items: center;
+
+    &__logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      border-radius: 50%;
+      padding: 0.7rem;
+    }
+
+    &__logo {
+      border-radius: 50%;
+      font-size: 3.5rem;
+      padding: 1.5rem;
+      z-index: 5;
+      color: white;
+      background-color: $color4;
+    }
+
+    &__description {
+      background-color: white;
+      color: $color2;
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 0 3.5rem;
+      margin-left: -2rem;
+      border-radius: 1rem;
+      width: 100%;
+    }
+    &__contact {
+      color: $color7;
+      font-size: 3rem;
+      font-weight: 900;
+      margin: 1rem 0;
+      padding: 0.5rem 1.5rem;
+      border: solid white 2px;
+      border-radius: 1rem;
+    }
+  }
+  @media only screen and (max-width: 40.25em), only screen and (hover: none) {
+    &__method__contact {
+      font-size: 2.5rem;
+    }
+  }
+}
